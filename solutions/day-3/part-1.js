@@ -11,6 +11,8 @@ lowercase.split('').forEach((c, i) => charMapping[c] = i + 1);
 const input = document.querySelector('pre').innerHTML;
 const rucksacks = input.split('\n');
 
+
+// Solution
 const result = rucksacks.reduce((sum, rucksack) => {
   const rucksackArr = divideRucksack(rucksack);
   const point = getRuckSackPriorityPoint(rucksackArr);
